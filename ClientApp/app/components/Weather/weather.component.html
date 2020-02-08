@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        span.name {
+            color: black
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        /* Style the header */
+        .header {
+            background-color: #f1f1f1;
+            padding: 5px;
+            text-align: center;
+        }
+
+        /* Create three equal columns that floats next to each other */
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 10px;
+            height: 315px; /* Should be removed. Only for demonstration */
+            text-align: center;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Style the footer */
+        .footer {
+            background-color: #f1f1f1;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+        @media (max-width: 600px) {
+            .column {
+                width: 100%;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+</head>
+<input id="interval" value={{this.stormInterval}} style="display:none;"/>
+<body onload="getIntervalPlease()">
+
+    <div class="header" height="1">
+        <h2>Current Weather Conditions for Ocean City Maryland:</h2>
+        <div *ngIf="this.stormInterval >= 10; then thenBlock1 else elseBlock1"></div>
+        <ng-template #thenBlock1><h3 style="color:red">COASTAL EVACUATION IS IN EFFECT PLEASE SEE EVACUATION MAP!</h3></ng-template>
+        <ng-template #elseBlock1><h4 style="color:#2593C7">{{this.forecast.currently.summary}}, Chance of {{this.forecast.daily.data[0].precipType}}: {{forecast.currently.precipProbability*100}}%, Temperature: {{this.forecast.currently.temperature}}&#x2109;, Wind: {{this.forecast.currently.windSpeed}}mph, Visibility: {{this.forecast.currently.visibility}}mi</h4></ng-template>
+        <!-- <img src="real-fake-doors.jpg" height="300" width="400"/> -->
+        <h2><iframe src="https://www.rainviewer.com/map.html?loc=38.695797,-77.879284,5.593611500958603&oFa=1&oC=1&oU=0&oCUB=1&oCS=1&oF=0&oAP=1&rmt=1" scrolling="YES" allowtransparency="false" sandbox="allow-same-origin allow-scripts allow-popups" style="height: 450px;width: 900px; overflow:visible " frameborder="0"></iframe></h2>
+        <h3 style="color:red">Weather Alerts: <span class="name">{{this.caption}}</span></h3>
+        <!-- <span ng-if="this.site != undefined"><h4><a href={{this.site}} target="_blank">Click Here For Alert Details</a></h4></span> -->
+        <div *ngIf="this.site != undefined; then thenBlock2 else elseBlock2"></div>
+        <ng-template #thenBlock2><h4><a href={{this.site}} target="_blank">Click Here For Alert Details</a></h4></ng-template>
+        <ng-template #elseBlock2> </ng-template>
+    </div>
+    <div class="row" style="margin:auto;">
+        <div class="column" style="background-color:#ddd;">
+            <div class="card-header">
+                <h1>  {{this.weekday[1]}}<img style="height:100px; width: 100px;" src="/animated/{{this.forecast.daily.data[1].icon}}.svg"></h1>
+                <div class="card-body text-primary">
+                    <h4 class="card-title" style="color:#236E92">{{this.forecast.daily.data[1].summary}}</h4>
+                    <h5 class="card-text" style="color:#3597C6">Temp Hi: {{this.forecast.daily.data[1].temperatureHigh}}&#x2109;</h5>
+                    <h5 class="card-text" style="color:#3597C6">Temp Low: {{this.forecast.daily.data[1].temperatureLow}}&#x2109;</h5>
+                    <h5 class="card-text" style="color:#3597C6">Wind: {{this.forecast.daily.data[1].windSpeed}}mph</h5>
+                    <h5 class="card-text" style="color:#3597C6">Wind Gust: {{this.forecast.daily.data[1].windGust}}mph</h5>
+                    <h5 class="card-text" style="color:#3597C6">Chance of {{this.forecast.daily.data[1].precipType}}: {{this.precipProb[1]}}%</h5>
+                </div>
+            </div>
+        </div>
+        <div class="column" style="background-color:#ccc;">
+            <div class="card-header">
+                <h1>{{this.weekday[2]}} <img style="height:100px; width: 100px;" src="/animated/{{this.forecast.daily.data[2].icon}}.svg"></h1>
+                <div class="card-body text-primary">
+                    <h4 class="card-title" style="color:#236E92">{{this.forecast.daily.data[2].summary}}</h4>
+                    <h5 class="card-text" style="color:#3597C6">Temp Hi: {{this.forecast.daily.data[2].temperatureHigh}}&#x2109;</h5>
+                    <h5 class="card-text" style="color:#3597C6">Temp Low: {{this.forecast.daily.data[2].temperatureLow}}&#x2109;</h5>
+                    <h5 class="card-text" style="color:#3597C6">Wind: {{this.forecast.daily.data[2].windSpeed}}mph</h5>
+                    <h5 class="card-text" style="color:#3597C6">Wind Gust: {{this.forecast.daily.data[2].windGust}}mph</h5>
+                    <h5 class="card-text" style="color:#3597C6">Chance of {{this.forecast.daily.data[2].precipType}}: {{this.precipProb[2]}}%</h5>
+                </div>
+            </div>
+        </div>
+        <div class="column" style="background-color:#ddd;">
+            <div class="card-header">
+                <h1>{{this.weekday[3]}} <img style="height:100px; width: 100px;" src="/animated/{{this.forecast.daily.data[3].icon}}.svg"></h1>
+                <div class="card-body text-primary">
+                    <h4 class="card-title" style="color:#236E92">{{this.forecast.daily.data[3].summary}}</h4>
+                    <h5 class="card-text" style="color:#3597C6">Temp Hi: {{this.forecast.daily.data[3].temperatureHigh}}&#x2109;</h5>
+                    <h5 class="card-text" style="color:#3597C6">Temp Low: {{this.forecast.daily.data[3].temperatureLow}}&#x2109;</h5>
+                    <h5 class="card-text" style="color:#3597C6">Wind: {{this.forecast.daily.data[3].windSpeed}}mph</h5>
+                    <h5 class="card-text" style="color:#3597C6">Wind Gust: {{this.forecast.daily.data[3].windGust}}mph</h5>
+                    <h5 class="card-text" style="color:#3597C6">Chance of {{this.forecast.daily.data[3].precipType}}: {{this.precipProb[3]}}%</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p></p>
+    </div>
+    <script src="map.js"></script>
+   <!-- <script src="interval.js"></script>-->
+</body>
+</html>

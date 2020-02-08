@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #gas{
+        height: 20px;
+        width: 20px;
+        background-color: #22D900;
+        border-radius: 50%;
+        border:1px solid black;
+        float: left;
+        }
+        #fire{
+        height: 20px;
+        width: 20px;
+        background-color: #FFA500;
+        border-radius: 50%;
+        border:1px solid black;
+        float: left;
+        }
+        #medical{
+        height: 20px;
+        width: 20px;
+        background-color: red;
+        border-radius: 50%;
+        border:1px solid black;
+        float: left;
+        }
+        #police{
+        height: 20px;
+        width: 20px;
+        background-color: blue;
+        border-radius: 50%;
+        border:1px solid black;
+        float: left;
+        }
+        p{
+        font-size: 15px;
+        }
+            .dropbtn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .dropbtn:hover, .dropbtn:focus {
+        background-color: #3e8e41;
+    }
+
+    #myInput {
+        border-box: box-sizing;
+        background-image: url('searchicon.png');
+        background-position: 14px 12px;
+        background-repeat: no-repeat;
+        font-size: 16px;
+        padding: 14px 20px 12px 45px;
+        border: none;
+        border-bottom: 1px solid #ddd;
+    }
+
+    #myInput:focus {outline: 3px solid #ddd;}
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f6f6f6;
+        min-width: 230px;
+        overflow: auto;
+        border: 1px solid #ddd;
+        z-index: 1;
+        right: 0;
+        //overflow: auto;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown a:hover {
+        background-color: #ddd;
+        cursor: pointer;
+    }
+
+    .show {display:block;}
+    </style>
+    <!--<script type="text/javascript">alert("hello");</script>-->
+</head>
+<body>
+    <div class="row">
+    <div style="float:right; margin:auto; text-align:center; padding-right:20px">
+        <h3>Table of contents</h3><br />
+        <div id="gas"></div>
+            <p>&nbsp;&nbsp;Gas Stations</p>
+        <div id="fire"></div>
+            <p>&nbsp;&nbsp;Fire Department</p>
+        <div id="medical"></div>
+            <p>&nbsp;&nbsp;Medical Stations</p>
+        <div id="police"></div>
+             <p>&nbsp;&nbsp;Police Stations</p>
+             <p id="decription">Click on a point to see direcription</p>
+        <!--<select class="dropdown">
+            <option *ngFor="let string of places" id="location">
+                {{string}}
+            </option>
+        </select>-->
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Select Location</button>
+            <div id="myDropdown" class="dropdown-content" style="height: 300px; overflow: scroll;">
+                <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                <a  onclick="getAddr('14107 Coastal Hwy, Ocean City, MD 21842')"><div id="gas"></div>Exxon 142nd St.</a>
+                <a  onclick="getAddr('7408 Coastal Hwy, Ocean City, MD 21842')"><div id="medical"></div>75th Medical Center</a>
+                <a  onclick="getAddr('6501 Coastal Hwy, Ocean City, MD 21842')"><div id="police"></div>Ocean City Police Department</a>
+                <a  onclick="getAddr('5809 Coastal Hwy, Ocean City, MD 21842')"><div id="gas"></div>7-Eleven 59th St.</a>
+                <a  onclick="getAddr('5201 Coastal Hwy, Ocean City, MD 21842')"><div id="gas"></div>Exxon 53rd St.</a>
+                <a  onclick="getAddr('2611 N Philadelphia Ave, Ocean City, MD 21842')"><div id="gas"></div>7-Eleven 28th St.</a>
+                <a  onclick="getAddr('1409 Philadelphia Ave, Ocean City, MD 21842')"><div id="fire"></div>Ocean City Fire Department</a>
+                <a  onclick="getAddr('5 Philadelphia Ave, Ocean City, MD 21842')"><div id="gas"></div>Shell Gas Station</a>
+                <a  onclick="getAddr('12826A Ocean Gateway, Ocean City, MD 21842')"><div id="gas"></div>Royal Farms</a>
+            </div>
+            <div id="location" style="display: none;">hello</div>
+        </div>
+
+
+         </div>
+         <iframe src="interestMap.html" style="height:750px; width:74%;"></iframe>
+    </div>
+<script src="dropdown.js"></script>
+<script src="map.js"></script>
+</body>
+
+</html>
