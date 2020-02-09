@@ -4,7 +4,7 @@
     "anonymousAuthentication": true
   },
   "profiles": {
-    "angular4Template": {
+    "ng-template": {
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {

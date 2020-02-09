@@ -1,0 +1,16 @@
+/Users/wesley/GoogleDrive/School/projects/stormApp/bin/Debug/netcoreapp2.0/appsettings.Development.json
+/Users/wesley/GoogleDrive/School/projects/stormApp/bin/Debug/netcoreapp2.0/appsettings.json
+/Users/wesley/GoogleDrive/School/projects/stormApp/bin/Debug/netcoreapp2.0/npm-shrinkwrap.json
+/Users/wesley/GoogleDrive/School/projects/stormApp/bin/Debug/netcoreapp2.0/package.json
+/Users/wesley/GoogleDrive/School/projects/stormApp/bin/Debug/netcoreapp2.0/tsconfig.json
+/Users/wesley/GoogleDrive/School/projects/stormApp/bin/Debug/netcoreapp2.0/Properties/launchSettings.json
+/Users/wesley/GoogleDrive/School/projects/stormApp/bin/Debug/netcoreapp2.0/ng-template.deps.json
+/Users/wesley/GoogleDrive/School/projects/stormApp/bin/Debug/netcoreapp2.0/ng-template.runtimeconfig.json
+/Users/wesley/GoogleDrive/School/projects/stormApp/bin/Debug/netcoreapp2.0/ng-template.runtimeconfig.dev.json
+/Users/wesley/GoogleDrive/School/projects/stormApp/bin/Debug/netcoreapp2.0/ng-template.dll
+/Users/wesley/GoogleDrive/School/projects/stormApp/bin/Debug/netcoreapp2.0/ng-template.pdb
+/Users/wesley/GoogleDrive/School/projects/stormApp/obj/Debug/netcoreapp2.0/ng-template.AssemblyInfoInputs.cache
+/Users/wesley/GoogleDrive/School/projects/stormApp/obj/Debug/netcoreapp2.0/ng-template.AssemblyInfo.cs
+/Users/wesley/GoogleDrive/School/projects/stormApp/obj/Debug/netcoreapp2.0/ng-template.dll
+/Users/wesley/GoogleDrive/School/projects/stormApp/obj/Debug/netcoreapp2.0/ng-template.pdb
+/Users/wesley/GoogleDrive/School/projects/stormApp/obj/Debug/netcoreapp2.0/ng-template.csprojAssemblyReference.cache

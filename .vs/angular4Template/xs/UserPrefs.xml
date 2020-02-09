@@ -4,10 +4,15 @@
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="angular4Template" expanded="True">
-            <Node name="angular4Template" expanded="True">
+            <Node name="angular4Template" expanded="True" selected="True">
               <Node name="Dependencies" expanded="True">
-                <Node name="PackageDependencies" selected="True" />
+                <Node name="PackageDependencies" expanded="True" />
+                <Node name="SdkDependencies" expanded="True">
+                  <Node name="Microsoft.NETCore.App" expanded="True" />
+                </Node>
               </Node>
+              <Node name="ClientApp" expanded="True" />
+              <Node name="package.json" expanded="True" />
             </Node>
           </Node>
         </State>

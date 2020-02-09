@@ -1,7 +1,7 @@
-﻿import { Http } from '@angular/http';
+import { Http } from '@angular/http';
 import { Headers, RequestOptions } from '@angular/http';
 import { WeatherModel } from '../app/Model';
-import 'rxjs/add/operator/toPromise';
+
 
 export class WeatherService {
 
