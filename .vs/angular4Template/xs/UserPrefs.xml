@@ -1,7 +1,9 @@
 ﻿<Properties StartupConfiguration="{820FD04D-449C-4FDD-AAD9-FF1DBDF16576}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ClientApp/app/components/Services/WeatherService.ts">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ClientApp/app/app.module.browser.ts">
     <Files>
-      <File FileName="ClientApp/app/components/Services/WeatherService.ts" Line="27" Column="132" />
+      <File FileName="ClientApp/app/components/Services/WeatherService.ts" Line="18" Column="37" />
+      <File FileName="ClientApp/app/app.module.shared.ts" Line="1" Column="1" />
+      <File FileName="ClientApp/app/app.module.browser.ts" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -14,11 +16,7 @@
               </Node>
               <Node name="ClientApp" expanded="True">
                 <Node name="app" expanded="True">
-                  <Node name="components" expanded="True">
-                    <Node name="Services" expanded="True">
-                      <Node name="WeatherService.ts" selected="True" />
-                    </Node>
-                  </Node>
+                  <Node name="app.module.browser.ts" selected="True" />
                 </Node>
               </Node>
               <Node name="package.json" expanded="True" />
