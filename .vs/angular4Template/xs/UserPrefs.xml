@@ -2,7 +2,7 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="ClientApp/app/app.module.browser.ts">
     <Files>
       <File FileName="ClientApp/app/components/Services/WeatherService.ts" Line="18" Column="37" />
-      <File FileName="ClientApp/app/app.module.shared.ts" Line="1" Column="1" />
+      <File FileName="ClientApp/app/app.module.shared.ts" />
       <File FileName="ClientApp/app/app.module.browser.ts" Line="1" Column="1" />
     </Files>
     <Pads>
