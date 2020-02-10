@@ -1,25 +1,20 @@
 ﻿<Properties StartupConfiguration="{820FD04D-449C-4FDD-AAD9-FF1DBDF16576}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ClientApp/app/app.module.browser.ts">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
     <Files>
       <File FileName="ClientApp/app/components/Services/WeatherService.ts" Line="18" Column="37" />
       <File FileName="ClientApp/app/app.module.shared.ts" />
-      <File FileName="ClientApp/app/app.module.browser.ts" Line="1" Column="1" />
+      <File FileName="ClientApp/app/app.module.browser.ts" />
+      <File FileName="ClientApp/app/components/Weather/weather.component.ts" />
+      <File FileName="ClientApp/app/components/Weather/weather.component.spec.ts" />
+      <File FileName="ClientApp/app/components/Weather/weather.component.html" Line="1" Column="1" />
+      <File FileName="Program.cs" Line="10" Column="42" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="angular4Template" expanded="True">
             <Node name="angular4Template" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="PackageDependencies" expanded="True" />
-                <Node name="SdkDependencies" expanded="True" />
-              </Node>
-              <Node name="ClientApp" expanded="True">
-                <Node name="app" expanded="True">
-                  <Node name="app.module.browser.ts" selected="True" />
-                </Node>
-              </Node>
-              <Node name="package.json" expanded="True" />
+              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>
