@@ -13185,11 +13185,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/wesley/GoogleDrive/School/projects/stormApp/ng-template.csproj",
-      "projectName": "ng-template",
-      "projectPath": "/Users/wesley/GoogleDrive/School/projects/stormApp/ng-template.csproj",
+      "projectUniqueName": "/Users/wesley/stormApp/angular4Template.csproj",
+      "projectName": "angular4Template",
+      "projectPath": "/Users/wesley/stormApp/angular4Template.csproj",
       "packagesPath": "/Users/wesley/.nuget/packages/",
-      "outputPath": "/Users/wesley/GoogleDrive/School/projects/stormApp/obj/",
+      "outputPath": "/Users/wesley/stormApp/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/wesley/.config/NuGet/NuGet.Config"
