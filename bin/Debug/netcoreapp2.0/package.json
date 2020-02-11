@@ -3,7 +3,12 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
+    "ng": "ng",
     "start": "node server.js",
+    "build": "ng build",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e",
     "postinstall": "ng build --aot -prod"
   },
   "dependencies": {
@@ -43,7 +48,7 @@
     "jquery": "^3.4.1",
     "json-loader": "0.5.4",
     "node.js": "0.0.0",
-    "npm": "^6.13.4",
+    "npm": "^5.10.0",
     "nuget": "^2.0.2",
     "path": "^0.12.7",
     "preboot": "4.5.2",
