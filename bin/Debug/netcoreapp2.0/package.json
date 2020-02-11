@@ -3,9 +3,8 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
     "start": "node server.js",
-    "postinstall": "ng build --aot=prod"
+    "heroku-postbuild": "ng build --prod"
   },
   "dependencies": {
     "@agm/core": "https://registry.npmjs.org/@agm/core/-/core-1.0.0-beta.1.tgz",
