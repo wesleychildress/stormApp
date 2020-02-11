@@ -1,9 +1,9 @@
 ﻿<Properties StartupConfiguration="{820FD04D-449C-4FDD-AAD9-FF1DBDF16576}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="package.json">
     <Files>
-      <File FileName="package.json" Line="8" Column="5" />
-      <File FileName="server.js" />
-      <File FileName="Program.cs" />
+      <File FileName="package.json" Line="5" Column="15" />
+      <File FileName="server.js" Line="13" Column="1" />
+      <File FileName="Program.cs" Line="10" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
